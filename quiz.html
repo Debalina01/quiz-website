@@ -46,6 +46,12 @@
 
     <div class="card quiz-card">
 
+      <div class="quiz-progress-wrapper">
+        <div class="quiz-progress-track">
+          <div class="quiz-progress-fill" id="progressBar" style="width: 10%;"></div>
+        </div>
+      </div>
+
       <div class="quiz-header">
 
         <span class="user-badge" id="currentUserBadge">
@@ -57,7 +63,7 @@
         </span>
 
         <span class="question-counter" id="questionCounter">
-          Question 1 of 5
+          Question 1 of 10
         </span>
 
       </div>
@@ -81,14 +87,20 @@
           id="prevBtn"
           class="btn btn-secondary"
           onclick="handlePreviousQuestion()">
-          Previous
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+          <span>Previous</span>
         </button>
 
         <button
           id="nextBtn"
           class="btn btn-primary"
           onclick="handleNextQuestion()">
-          Next
+          <span>Next</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
         </button>
 
         <button
@@ -96,7 +108,10 @@
           class="btn btn-success"
           style="display: none;"
           onclick="handleSubmitQuiz()">
-          Submit Quiz
+          <span>Submit Quiz</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
         </button>
 
       </div>
@@ -104,6 +119,34 @@
     </div>
 
   </main>
+
+  <!-- Custom Confirmation Modal -->
+  <div id="submitModal" class="modal-backdrop" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <div class="modal-icon-badge" id="modalIconBadge">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="8" x2="12" y2="12"></line>
+          <line x1="12" y1="16" x2="12.01" y2="16"></line>
+        </svg>
+      </div>
+      <h3 id="modalTitle" class="modal-title">Submit Quiz?</h3>
+      <p class="modal-message" id="modalMessage">
+        You have answered <strong id="modalAnsweredCount">0</strong> out of <strong id="modalTotalCount">10</strong> questions.
+      </p>
+      <p class="modal-submessage" id="modalSubmessage">
+        Are you sure you want to submit your quiz?
+      </p>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-secondary modal-btn" onclick="closeSubmitModal()">
+          Cancel
+        </button>
+        <button type="button" class="btn btn-success modal-btn" onclick="confirmSubmitQuiz()">
+          Submit Quiz
+        </button>
+      </div>
+    </div>
+  </div>
 
 
   <script  src="script.js"></script>
