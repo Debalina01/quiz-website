@@ -1,0 +1,1212 @@
+[
+  {
+    "ques_no": 1,
+    "question": "What does HTML stand for?",
+    "options": [
+      "Hyper Text Markup Language",
+      "High Tech Modern Language",
+      "Hyper Transfer Markup Language",
+      "Home Tool Markup Language"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "ques_no": 2,
+    "question": "Which CSS property is used to change the text color of an element?",
+    "options": [
+      "font-color",
+      "text-color",
+      "color",
+      "background-color"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "ques_no": 3,
+    "question": "Which JavaScript keyword is used to declare a constant variable?",
+    "options": [
+      "var",
+      "let",
+      "constant",
+      "const"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "ques_no": 4,
+    "question": "Inside which HTML element do we put JavaScript code?",
+    "options": [
+      "<js>",
+      "<script>",
+      "<javascript>",
+      "<scripting>"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 5,
+    "question": "Which of the following is NOT a JavaScript data type?",
+    "options": [
+      "Boolean",
+      "Undefined",
+      "Number",
+      "Float"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "ques_no": 6,
+    "question": "Which HTML tag is used to create a paragraph?",
+    "options": [
+      "<p>",
+      "<para>",
+      "<paragraph>",
+      "<text>"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "ques_no": 7,
+    "question": "Which HTML tag is used to create the largest heading?",
+    "options": [
+      "<heading>",
+      "<h6>",
+      "<h1>",
+      "<head>"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "ques_no": 8,
+    "question": "Which CSS property is used to change the background color?",
+    "options": [
+      "color",
+      "background-color",
+      "bgcolor",
+      "background"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 9,
+    "question": "Which symbol is used for an ID selector in CSS?",
+    "options": [
+      ".",
+      "#",
+      "*",
+      "&"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 10,
+    "question": "Which symbol is used for a class selector in CSS?",
+    "options": [
+      "#",
+      ".",
+      "*",
+      "@"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 11,
+    "question": "Which HTML attribute specifies an image source?",
+    "options": [
+      "src",
+      "href",
+      "link",
+      "source"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "ques_no": 12,
+    "question": "Which HTML tag is used to create a hyperlink?",
+    "options": [
+      "<link>",
+      "<a>",
+      "<href>",
+      "<url>"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 13,
+    "question": "Which CSS property is used to make text bold?",
+    "options": [
+      "font-style",
+      "text-bold",
+      "font-weight",
+      "font-bold"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "ques_no": 14,
+    "question": "Which CSS property controls the size of text?",
+    "options": [
+      "text-size",
+      "font-size",
+      "size",
+      "font-height"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 15,
+    "question": "Which JavaScript method adds an element to the end of an array?",
+    "options": [
+      "push()",
+      "add()",
+      "append()",
+      "insert()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "ques_no": 16,
+    "question": "Which JavaScript method removes the last element from an array?",
+    "options": [
+      "remove()",
+      "delete()",
+      "pop()",
+      "last()"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "ques_no": 17,
+    "question": "Which keyword is used to declare a variable in JavaScript?",
+    "options": [
+      "variable",
+      "let",
+      "define",
+      "declare"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 18,
+    "question": "Which operator is used for strict equality in JavaScript?",
+    "options": [
+      "==",
+      "=",
+      "===",
+      "!="
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "ques_no": 19,
+    "question": "Which method converts JSON string into a JavaScript object?",
+    "options": [
+      "JSON.parse()",
+      "JSON.convert()",
+      "JSON.object()",
+      "JSON.stringify()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "ques_no": 20,
+    "question": "Which method converts a JavaScript object into a JSON string?",
+    "options": [
+      "JSON.parse()",
+      "JSON.stringify()",
+      "JSON.convert()",
+      "JSON.toString()"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 21,
+    "question": "Which HTML tag is used to display an image?",
+    "options": [
+      "<image>",
+      "<img>",
+      "<picture>",
+      "<src>"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 22,
+    "question": "Which CSS property is used to add space inside an element?",
+    "options": [
+      "margin",
+      "padding",
+      "spacing",
+      "border"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 23,
+    "question": "Which CSS property is used to add space outside an element?",
+    "options": [
+      "padding",
+      "margin",
+      "space",
+      "outside"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 24,
+    "question": "Which CSS property is used to create rounded corners?",
+    "options": [
+      "corner-radius",
+      "border-radius",
+      "radius",
+      "round-border"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 25,
+    "question": "Which CSS layout system is commonly used for one-dimensional layouts?",
+    "options": [
+      "Grid",
+      "Flexbox",
+      "Float",
+      "Table"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 26,
+    "question": "Which CSS layout system is designed for two-dimensional layouts?",
+    "options": [
+      "Flexbox",
+      "Grid",
+      "Float",
+      "Position"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 27,
+    "question": "Which JavaScript function is used to print something to the console?",
+    "options": [
+      "console.log()",
+      "print()",
+      "console.print()",
+      "log.console()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "ques_no": 28,
+    "question": "Which JavaScript function displays a popup message?",
+    "options": [
+      "message()",
+      "alert()",
+      "popup()",
+      "show()"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 29,
+    "question": "What is the result of typeof null in JavaScript?",
+    "options": [
+      "null",
+      "object",
+      "undefined",
+      "NullType"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 30,
+    "question": "Which value represents a missing value in JavaScript?",
+    "options": [
+      "undefined",
+      "empty",
+      "none",
+      "void"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "ques_no": 31,
+    "question": "Which HTML tag creates an unordered list?",
+    "options": [
+      "<ol>",
+      "<list>",
+      "<ul>",
+      "<li>"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "ques_no": 32,
+    "question": "Which HTML tag creates an ordered list?",
+    "options": [
+      "<ul>",
+      "<ol>",
+      "<li>",
+      "<order>"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 33,
+    "question": "Which HTML tag defines a list item?",
+    "options": [
+      "<item>",
+      "<li>",
+      "<list-item>",
+      "<ul>"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 34,
+    "question": "Which HTML tag is used to create a table row?",
+    "options": [
+      "<td>",
+      "<tr>",
+      "<th>",
+      "<row>"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 35,
+    "question": "Which HTML tag is used for a table cell?",
+    "options": [
+      "<cell>",
+      "<td>",
+      "<tr>",
+      "<table-cell>"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 36,
+    "question": "Which HTML tag is used for a table header cell?",
+    "options": [
+      "<header>",
+      "<thead>",
+      "<th>",
+      "<td>"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "ques_no": 37,
+    "question": "Which CSS property changes the font family?",
+    "options": [
+      "font-family",
+      "font-type",
+      "text-family",
+      "font-style"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "ques_no": 38,
+    "question": "Which CSS property aligns text horizontally?",
+    "options": [
+      "align-text",
+      "text-align",
+      "horizontal-align",
+      "align"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 39,
+    "question": "Which CSS value hides an element completely?",
+    "options": [
+      "visibility: hidden",
+      "display: none",
+      "opacity: 0",
+      "hide: true"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 40,
+    "question": "Which CSS property controls element transparency?",
+    "options": [
+      "transparent",
+      "opacity",
+      "visibility",
+      "alpha"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 41,
+    "question": "Which JavaScript loop is commonly used when the number of iterations is known?",
+    "options": [
+      "for",
+      "while",
+      "do-while",
+      "repeat"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "ques_no": 42,
+    "question": "Which loop runs at least once before checking the condition?",
+    "options": [
+      "for",
+      "while",
+      "do...while",
+      "foreach"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "ques_no": 43,
+    "question": "Which keyword exits a loop?",
+    "options": [
+      "exit",
+      "stop",
+      "break",
+      "end"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "ques_no": 44,
+    "question": "Which keyword skips the current iteration of a loop?",
+    "options": [
+      "skip",
+      "continue",
+      "next",
+      "pass"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 45,
+    "question": "Which JavaScript statement is used to handle errors?",
+    "options": [
+      "try...catch",
+      "error...handle",
+      "catch...error",
+      "handle...error"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "ques_no": 46,
+    "question": "Which JavaScript keyword is used to create a function?",
+    "options": [
+      "function",
+      "def",
+      "func",
+      "method"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "ques_no": 47,
+    "question": "Which method executes a function for each array element?",
+    "options": [
+      "each()",
+      "forEach()",
+      "loop()",
+      "iterate()"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 48,
+    "question": "Which array method creates a new array by transforming elements?",
+    "options": [
+      "filter()",
+      "map()",
+      "reduce()",
+      "change()"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 49,
+    "question": "Which array method filters elements based on a condition?",
+    "options": [
+      "filter()",
+      "select()",
+      "where()",
+      "findAll()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "ques_no": 50,
+    "question": "Which array method reduces an array to a single value?",
+    "options": [
+      "reduce()",
+      "single()",
+      "combine()",
+      "merge()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "ques_no": 51,
+    "question": "Which JavaScript object represents the current webpage?",
+    "options": [
+      "window",
+      "document",
+      "page",
+      "browser"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 52,
+    "question": "Which method selects an element by its ID?",
+    "options": [
+      "getElementById()",
+      "queryId()",
+      "selectId()",
+      "getById()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "ques_no": 53,
+    "question": "Which method selects the first element matching a CSS selector?",
+    "options": [
+      "querySelector()",
+      "selectFirst()",
+      "getSelector()",
+      "findSelector()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "ques_no": 54,
+    "question": "Which property changes the HTML content of an element?",
+    "options": [
+      "innerHTML",
+      "htmlContent",
+      "contentHTML",
+      "innerTextHTML"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "ques_no": 55,
+    "question": "Which property changes only the visible text of an element?",
+    "options": [
+      "innerText",
+      "textHTML",
+      "textContentHTML",
+      "visibleText"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "ques_no": 56,
+    "question": "Which event occurs when a user clicks an element?",
+    "options": [
+      "onpress",
+      "onclick",
+      "onhover",
+      "onselect"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 57,
+    "question": "Which event occurs when a form is submitted?",
+    "options": [
+      "submit",
+      "send",
+      "formSubmit",
+      "onsend"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "ques_no": 58,
+    "question": "Which method attaches an event handler in JavaScript?",
+    "options": [
+      "addEventListener()",
+      "addEvent()",
+      "attachEventListener()",
+      "onEvent()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "ques_no": 59,
+    "question": "Which browser storage persists after closing the browser?",
+    "options": [
+      "sessionStorage",
+      "localStorage",
+      "memoryStorage",
+      "temporaryStorage"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 60,
+    "question": "Which browser storage is cleared when the page session ends?",
+    "options": [
+      "localStorage",
+      "sessionStorage",
+      "cookieStorage",
+      "pageStorage"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 61,
+    "question": "What does CSS stand for?",
+    "options": [
+      "Creative Style Sheets",
+      "Cascading Style Sheets",
+      "Computer Style Syntax",
+      "Colorful Style Sheets"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 62,
+    "question": "What does DOM stand for?",
+    "options": [
+      "Document Object Model",
+      "Data Object Model",
+      "Document Oriented Model",
+      "Digital Object Management"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "ques_no": 63,
+    "question": "What does API stand for?",
+    "options": [
+      "Application Programming Interface",
+      "Application Process Integration",
+      "Advanced Programming Interface",
+      "Application Program Internet"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "ques_no": 64,
+    "question": "What does URL stand for?",
+    "options": [
+      "Universal Resource Locator",
+      "Uniform Resource Locator",
+      "Universal Reference Link",
+      "Uniform Reference Locator"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 65,
+    "question": "What does HTTP stand for?",
+    "options": [
+      "HyperText Transfer Protocol",
+      "HighText Transfer Protocol",
+      "Hyper Transfer Text Process",
+      "HyperText Transmission Program"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "ques_no": 66,
+    "question": "Which HTTP method is commonly used to retrieve data?",
+    "options": [
+      "POST",
+      "GET",
+      "PUT",
+      "DELETE"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 67,
+    "question": "Which HTTP method is commonly used to send new data?",
+    "options": [
+      "GET",
+      "POST",
+      "READ",
+      "FETCH"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 68,
+    "question": "Which HTTP status code means 'Not Found'?",
+    "options": [
+      "200",
+      "301",
+      "404",
+      "500"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "ques_no": 69,
+    "question": "Which HTTP status code means 'OK'?",
+    "options": [
+      "200",
+      "201",
+      "404",
+      "500"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "ques_no": 70,
+    "question": "Which HTTP status code indicates a server error?",
+    "options": [
+      "200",
+      "301",
+      "404",
+      "500"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "ques_no": 71,
+    "question": "Which Git command creates a new repository?",
+    "options": [
+      "git start",
+      "git init",
+      "git create",
+      "git new"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 72,
+    "question": "Which Git command downloads a repository?",
+    "options": [
+      "git download",
+      "git clone",
+      "git copy",
+      "git pull-new"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 73,
+    "question": "Which Git command uploads local commits to a remote repository?",
+    "options": [
+      "git push",
+      "git upload",
+      "git send",
+      "git commit"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "ques_no": 74,
+    "question": "Which Git command creates a commit?",
+    "options": [
+      "git save",
+      "git commit",
+      "git push",
+      "git store"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 75,
+    "question": "Which command shows the current Git status?",
+    "options": [
+      "git check",
+      "git status",
+      "git info",
+      "git state"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 76,
+    "question": "Which JavaScript data structure stores key-value pairs?",
+    "options": [
+      "Object",
+      "Array",
+      "String",
+      "Number"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "ques_no": 77,
+    "question": "Which symbol is used to create an arrow function?",
+    "options": [
+      "->",
+      "=>",
+      "::",
+      "==>"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 78,
+    "question": "Which keyword refers to the current object context?",
+    "options": [
+      "self",
+      "this",
+      "current",
+      "object"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 79,
+    "question": "Which keyword is used to create a class in JavaScript?",
+    "options": [
+      "object",
+      "class",
+      "struct",
+      "type"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 80,
+    "question": "Which keyword is used to inherit from another class?",
+    "options": [
+      "inherits",
+      "extends",
+      "implements",
+      "inherit"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 81,
+    "question": "Which operator is used for logical AND?",
+    "options": [
+      "||",
+      "&&",
+      "&",
+      "AND"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 82,
+    "question": "Which operator is used for logical OR?",
+    "options": [
+      "&&",
+      "||",
+      "|",
+      "OR"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 83,
+    "question": "Which operator returns the remainder of a division?",
+    "options": [
+      "/",
+      "%",
+      "//",
+      "mod"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 84,
+    "question": "What is the result of 2 + '2' in JavaScript?",
+    "options": [
+      "4",
+      "22",
+      "NaN",
+      "undefined"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 85,
+    "question": "Which value is considered falsy in JavaScript?",
+    "options": [
+      "1",
+      "'hello'",
+      "0",
+      "[]"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "ques_no": 86,
+    "question": "Which CSS property changes the width of an element?",
+    "options": [
+      "size",
+      "width",
+      "element-width",
+      "box-width"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 87,
+    "question": "Which CSS property changes the height of an element?",
+    "options": [
+      "height",
+      "size-height",
+      "element-height",
+      "box-height"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "ques_no": 88,
+    "question": "Which CSS property controls the stacking order of elements?",
+    "options": [
+      "stack",
+      "z-index",
+      "layer",
+      "order-index"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 89,
+    "question": "Which CSS property is used to make an element fixed to the viewport?",
+    "options": [
+      "position: fixed",
+      "fixed: true",
+      "display: fixed",
+      "layout: fixed"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "ques_no": 90,
+    "question": "Which CSS property is used to make an element invisible but keep its space?",
+    "options": [
+      "display: none",
+      "visibility: hidden",
+      "remove: true",
+      "hide: true"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 91,
+    "question": "Which HTML tag defines the title shown in the browser tab?",
+    "options": [
+      "<head>",
+      "<title>",
+      "<caption>",
+      "<header>"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 92,
+    "question": "Which HTML element contains metadata?",
+    "options": [
+      "<body>",
+      "<meta>",
+      "<head>",
+      "<data>"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "ques_no": 93,
+    "question": "Which HTML tag is used to create a line break?",
+    "options": [
+      "<break>",
+      "<br>",
+      "<lb>",
+      "<newline>"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 94,
+    "question": "Which HTML attribute provides alternative text for an image?",
+    "options": [
+      "title",
+      "alt",
+      "text",
+      "description"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 95,
+    "question": "Which HTML tag is used to create a form?",
+    "options": [
+      "<input>",
+      "<form>",
+      "<field>",
+      "<form-box>"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 96,
+    "question": "Which input type is used for passwords?",
+    "options": [
+      "text",
+      "password",
+      "secure",
+      "hidden-text"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 97,
+    "question": "Which input type allows selecting one option from a group?",
+    "options": [
+      "checkbox",
+      "radio",
+      "select",
+      "option"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 98,
+    "question": "Which input type allows selecting multiple options?",
+    "options": [
+      "radio",
+      "checkbox",
+      "multiple",
+      "select"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 99,
+    "question": "Which HTML tag creates a dropdown list?",
+    "options": [
+      "<dropdown>",
+      "<select>",
+      "<option-list>",
+      "<list>"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 100,
+    "question": "Which tag defines an option inside a select element?",
+    "options": [
+      "<choice>",
+      "<option>",
+      "<item>",
+      "<select-option>"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 101,
+    "question": "Which JavaScript method checks if an array includes a value?",
+    "options": [
+      "contains()",
+      "includes()",
+      "has()",
+      "exists()"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 102,
+    "question": "Which method returns the index of an item in an array?",
+    "options": [
+      "findIndex()",
+      "indexOf()",
+      "getIndex()",
+      "positionOf()"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 103,
+    "question": "Which method joins array elements into a string?",
+    "options": [
+      "join()",
+      "combine()",
+      "merge()",
+      "concatString()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "ques_no": 104,
+    "question": "Which method adds elements to the beginning of an array?",
+    "options": [
+      "push()",
+      "prepend()",
+      "unshift()",
+      "addFirst()"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "ques_no": 105,
+    "question": "Which method removes the first element from an array?",
+    "options": [
+      "shift()",
+      "removeFirst()",
+      "pop()",
+      "deleteFirst()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "ques_no": 106,
+    "question": "Which JavaScript object is used to work with dates?",
+    "options": [
+      "Calendar",
+      "Date",
+      "Time",
+      "DateTime"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 107,
+    "question": "Which function generates a random number between 0 and 1?",
+    "options": [
+      "Math.random()",
+      "Math.randomNumber()",
+      "Random()",
+      "Math.rand()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "ques_no": 108,
+    "question": "Which Math method rounds a number down?",
+    "options": [
+      "Math.round()",
+      "Math.floor()",
+      "Math.ceil()",
+      "Math.down()"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "ques_no": 109,
+    "question": "Which Math method rounds a number up?",
+    "options": [
+      "Math.floor()",
+      "Math.round()",
+      "Math.ceil()",
+      "Math.up()"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "ques_no": 110,
+    "question": "Which JavaScript function converts a string into an integer?",
+    "options": [
+      "parseInt()",
+      "toInteger()",
+      "NumberInt()",
+      "integer()"
+    ],
+    "correctAnswer": 0
+  }
+]

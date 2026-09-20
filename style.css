@@ -1,4 +1,3 @@
-
 :root {
   --primary: #7c3aed;
   --primary-hover: #6d28d9;
@@ -39,11 +38,9 @@
 
 body {
   min-height: 100vh;
-  background: linear-gradient(
-    180deg,
-    #f5f3ff 0%,
-    #f8fafc 100%
-  );
+  background: linear-gradient(180deg,
+      #f5f3ff 0%,
+      #f8fafc 100%);
   color: var(--text-main);
   display: flex;
   flex-direction: column;
@@ -210,22 +207,18 @@ body {
 
 
 .btn-primary {
-  background: linear-gradient(
-    135deg,
-    #8b5cf6 0%,
-    #6d28d9 100%
-  );
+  background: linear-gradient(135deg,
+      #8b5cf6 0%,
+      #6d28d9 100%);
   color: white;
   box-shadow: 0 4px 14px rgba(109, 40, 217, 0.25);
 }
 
 
 .btn-primary:hover:not(:disabled) {
-  background: linear-gradient(
-    135deg,
-    #7c3aed 0%,
-    #5b21b6 100%
-  );
+  background: linear-gradient(135deg,
+      #7c3aed 0%,
+      #5b21b6 100%);
   transform: translateY(-1px);
 }
 
@@ -244,22 +237,18 @@ body {
 
 
 .btn-success {
-  background: linear-gradient(
-    135deg,
-    #10b981 0%,
-    #059669 100%
-  );
+  background: linear-gradient(135deg,
+      #10b981 0%,
+      #059669 100%);
   color: white;
   box-shadow: 0 4px 14px rgba(16, 185, 129, 0.25);
 }
 
 
 .btn-success:hover:not(:disabled) {
-  background: linear-gradient(
-    135deg,
-    #059669 0%,
-    #047857 100%
-  );
+  background: linear-gradient(135deg,
+      #059669 0%,
+      #047857 100%);
   transform: translateY(-1px);
 }
 
@@ -284,6 +273,16 @@ body {
 .user-badge {
   background: var(--primary-soft);
   color: var(--primary-active);
+  border: 1px solid var(--primary-border);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.timer-badge {
+  background: #f5dddc;
+  color: #f1482b;
   border: 1px solid var(--primary-border);
   padding: 6px 14px;
   border-radius: 20px;
@@ -401,11 +400,9 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 4px;
-  background: linear-gradient(
-    135deg,
-    #f5f3ff 0%,
-    #ede9fe 100%
-  );
+  background: linear-gradient(135deg,
+      #f5f3ff 0%,
+      #ede9fe 100%);
   border: 1.5px solid var(--primary-border);
   border-radius: 14px;
   padding: 22px 20px;
@@ -465,7 +462,419 @@ body {
   font-weight: bold;
 }
 
+.text-success {
+  color: var(--success) !important;
+}
 
+.text-danger {
+  color: var(--danger) !important;
+}
+
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+/* Result Page Container & Layout */
+.result-page-container {
+  max-width: 820px;
+  flex-direction: column;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.result-page-container .result-card {
+  max-width: 100%;
+}
+
+.score-percentage-badge {
+  display: inline-block;
+  margin-top: 8px;
+  background: var(--primary);
+  color: #ffffff;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  box-shadow: 0 2px 6px rgba(124, 58, 237, 0.25);
+}
+
+.result-action-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.result-action-buttons .btn {
+  flex: 1;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-review-jump {
+  background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+  color: #ffffff;
+}
+
+/* Review Section */
+.review-section {
+  max-width: 100%;
+  padding: 36px 32px;
+}
+
+.review-section-header {
+  margin-bottom: 22px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.review-title {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 6px;
+}
+
+.review-subtitle {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Review Filter Tabs */
+.review-filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 26px;
+}
+
+.filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 16px;
+  background: #f8fafc;
+  color: #475569;
+  border: 1.5px solid var(--border-color);
+  border-radius: 22px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+}
+
+.filter-btn.active {
+  background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 4px 12px rgba(109, 40, 217, 0.22);
+}
+
+.filter-count {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.78rem;
+  background: rgba(0, 0, 0, 0.07);
+}
+
+.filter-btn.active .filter-count {
+  background: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+}
+
+/* Questions Review List & Cards */
+.questions-review-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.review-card {
+  background: #ffffff;
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 22px 24px;
+  transition: box-shadow 0.2s ease;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.03);
+}
+
+.review-card:hover {
+  box-shadow: 0 6px 18px rgba(91, 33, 182, 0.08);
+}
+
+.review-card.card-correct {
+  border-left: 5px solid var(--success);
+}
+
+.review-card.card-incorrect {
+  border-left: 5px solid var(--danger);
+}
+
+.review-card.card-skipped {
+  border-left: 5px solid #94a3b8;
+}
+
+.review-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.review-q-index {
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.badge-correct {
+  background: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+
+.badge-incorrect {
+  background: var(--danger-bg);
+  color: #991b1b;
+  border: 1px solid var(--danger-border);
+}
+
+.badge-skipped {
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #cbd5e1;
+}
+
+.review-question-text {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+
+/* Options Container */
+.review-options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.review-option-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--border-color);
+  background: #fafafa;
+  font-size: 0.94rem;
+  line-height: 1.4;
+  gap: 12px;
+  transition: all 0.15s ease;
+}
+
+.review-option-item .option-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.option-letter-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #e2e8f0;
+  color: #334155;
+  font-weight: 700;
+  font-size: 0.82rem;
+  flex-shrink: 0;
+}
+
+.option-text-content {
+  color: #334155;
+}
+
+.option-pill-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.tag-success {
+  background: #d1fae5;
+  color: #065f46;
+  border: 1px solid #6ee7b7;
+}
+
+.tag-danger {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fca5a5;
+}
+
+.tag-correct-key {
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+}
+
+.review-option-item.is-user-correct {
+  background: #f0fdf4;
+  border-color: #34d399;
+}
+
+.review-option-item.is-user-correct .option-letter-badge {
+  background: #10b981;
+  color: #ffffff;
+}
+
+.review-option-item.is-user-wrong {
+  background: #fff1f2;
+  border-color: #f87171;
+}
+
+.review-option-item.is-user-wrong .option-letter-badge {
+  background: #ef4444;
+  color: #ffffff;
+}
+
+.review-option-item.is-correct-answer {
+  background: #f0fdf4;
+  border-color: #6ee7b7;
+  border-style: dashed;
+}
+
+.review-option-item.is-correct-answer .option-letter-badge {
+  background: #10b981;
+  color: #ffffff;
+}
+
+.review-option-item.is-neutral {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  color: #64748b;
+}
+
+/* Answer Summary Callout */
+.review-answer-summary {
+  background: #f8fafc;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  padding: 13px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.review-answer-summary.summary-correct {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.review-answer-summary.summary-incorrect {
+  background: #fef2f2;
+  border-color: #fecaca;
+}
+
+.review-answer-summary.summary-skipped {
+  background: #f8fafc;
+  border-color: #e2e8f0;
+}
+
+.summary-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 0.9rem;
+  align-items: baseline;
+}
+
+.summary-label {
+  font-weight: 700;
+  color: #334155;
+  min-width: 105px;
+}
+
+.summary-value {
+  font-weight: 500;
+}
+
+/* Review Empty State */
+.review-empty-state {
+  text-align: center;
+  padding: 38px 20px;
+  background: #f8fafc;
+  border-radius: var(--radius-md);
+  border: 1.5px dashed var(--border-color);
+}
+
+.review-empty-state .empty-icon {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+.review-empty-state .empty-title {
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 4px;
+}
+
+.review-empty-state .empty-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Review Bottom Actions */
+.review-bottom-actions {
+  margin-top: 28px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.review-bottom-actions .btn {
+  max-width: 220px;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 @media (max-width: 640px) {
@@ -487,8 +896,16 @@ body {
 
 
   .card {
-    padding: 28px 18px;
+    padding: 24px 16px;
     border-radius: 14px;
+  }
+
+  .review-section {
+    padding: 22px 14px;
+  }
+
+  .review-card {
+    padding: 18px 14px;
   }
 
 
@@ -527,6 +944,38 @@ body {
 
   .result-value.highlight {
     font-size: 2.2rem;
+  }
+
+  .result-action-buttons {
+    flex-direction: column;
+  }
+
+  .review-bottom-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .review-bottom-actions .btn {
+    max-width: 100%;
+  }
+
+  .review-filter-tabs {
+    gap: 6px;
+  }
+
+  .filter-btn {
+    padding: 8px 12px;
+    font-size: 0.82rem;
+  }
+
+  .review-option-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .option-pill-tag {
+    align-self: flex-start;
   }
 
 }

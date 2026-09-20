@@ -1,72 +1,50 @@
 
-const VALID_USER_IDS = [
-  "6377853173",
-  "9602816671",
-  "9413301577",
-  "9460091176"
-];
+// const VALID_USER_IDS = [
+//   "6377853173",
+//   "9602816671",
+//   "9413301577",
+//   "9460091176",
+//   "8941039401"
+// ];
+async function getRandomQuestions() {
 
-
-const QUIZ_QUESTIONS = [
-  {
-    question: "What does HTML stand for?",
-    options: [
-      "Hyper Text Markup Language",
-      "High Tech Modern Language",
-      "Hyper Transfer Markup Language",
-      "Home Tool Markup Language"
-    ],
-    correctAnswer: 0
-  },
-
-  {
-    question: "Which CSS property is used to change the text color of an element?",
-    options: [
-      "font-color",
-      "text-color",
-      "color",
-      "background-color"
-    ],
-    correctAnswer: 2
-  },
-
-  {
-    question: "Which JavaScript keyword is used to declare a constant variable?",
-    options: [
-      "var",
-      "let",
-      "constant",
-      "const"
-    ],
-    correctAnswer: 3
-  },
-
-  {
-    question: "Inside which HTML element do we put JavaScript code?",
-    options: [
-      "<js>",
-      "<script>",
-      "<javascript>",
-      "<scripting>"
-    ],
-    correctAnswer: 1
-  },
-
-  {
-    question: "Which of the following is NOT a JavaScript data type?",
-    options: [
-      "Boolean",
-      "Undefined",
-      "Number",
-      "Float"
-    ],
-    correctAnswer: 3
+  const savedQuestions = sessionStorage.getItem("storedQuizQuestions");
+  if (savedQuestions) {
+    try {
+      return JSON.parse(savedQuestions); 
+    } catch (e) {
+      console.error("Error parsing stored questions:", e);
+    }
   }
-];
 
+  try {
+    const response = await fetch('./que.json');
+    const allQuestions = await response.json();
+
+  
+    for (let i = allQuestions.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [allQuestions[i], allQuestions[j]] = [allQuestions[j], allQuestions[i]];
+    }
+
+    const random10 = allQuestions.slice(0, 10);
+
+    
+    sessionStorage.setItem("storedQuizQuestions", JSON.stringify(random10));
+
+    return random10;
+  } catch (error) {
+    console.error("Failed to load questions:", error);
+    return [];
+  }
+}
+
+
+let QUIZ_QUESTIONS = [];
 
 let currentQuestionIndex = 0;
 let userAnswers = {};
+let isTimeout = false;
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -87,59 +65,49 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function initIndexPage() {
 
-  const userIdInput = document.getElementById("userIdInput");
-
-  if (userIdInput) {
-    userIdInput.focus();
+  const userNameInput = document.getElementById("userNameInput");
+  sessionStorage.setItem("min", 9);
+  sessionStorage.setItem("sec", 59);
+  if (userNameInput) {
+    userNameInput.focus();
   }
 
 }
 
 
-function isValidUserId(userId) {
+// function isValidUserId(userId) {
 
-  if (!userId) {
-    return false;
-  }
+//   if (!userId) {
+//     return false;
+//   }
 
-  return VALID_USER_IDS.includes(userId.trim().toUpperCase());
-}
+//   return VALID_USER_IDS.includes(userId.trim().toUpperCase());
+// }
 
 
 function handleStartQuiz(event) {
 
   event.preventDefault();
-
+  const userNameInput = document.getElementById("userNameInput");
   const userIdInput = document.getElementById("userIdInput");
   const errorMessage = document.getElementById("errorMessage");
-
   const enteredId = userIdInput.value.trim().toUpperCase();
+  errorMessage.style.display = "none";
+  errorMessage.textContent = "";
+  sessionStorage.setItem("currentUserName", userNameInput.value.trim());
+  sessionStorage.setItem("currentUserId", enteredId);
+  sessionStorage.removeItem("quizAnswers");
+  sessionStorage.removeItem("quizResult");
+  sessionStorage.removeItem("storedQuizQuestions");
 
-  if (isValidUserId(enteredId)) {
-
-    errorMessage.style.display = "none";
-    errorMessage.textContent = "";
-
-    sessionStorage.setItem("currentUserId", enteredId);
-    sessionStorage.removeItem("quizAnswers");
-    sessionStorage.removeItem("quizResult");
-
-    window.location.href = "quiz.html";
-
-  } else {
-
-    errorMessage.textContent = "Invalid User ID. Please enter a valid User ID.";
-    errorMessage.style.display = "block";
-
-    userIdInput.focus();
-  }
+  window.location.href = "quiz.html";
 }
 
-function initQuizPage() {
+async function initQuizPage() {
 
-  const currentUserId = sessionStorage.getItem("currentUserId");
+  const currentUserName = sessionStorage.getItem("currentUserName");
 
-  if (!currentUserId) {
+  if (!currentUserName) {
     window.location.href = "index.html";
     return;
   }
@@ -147,10 +115,10 @@ function initQuizPage() {
   const currentUserBadge = document.getElementById("currentUserBadge");
 
   if (currentUserBadge) {
-    currentUserBadge.textContent = "User: " + currentUserId;
+    currentUserBadge.textContent = "User: " + currentUserName;
   }
 
-
+  QUIZ_QUESTIONS = await getRandomQuestions();
   const savedAnswers = sessionStorage.getItem("quizAnswers");
 
   if (savedAnswers) {
@@ -166,6 +134,8 @@ function initQuizPage() {
 
 
   currentQuestionIndex = 0;
+
+  quizTimer();
 
   displayQuestion(currentQuestionIndex);
 }
@@ -314,8 +284,7 @@ function handleSubmitQuiz() {
     Object.keys(userAnswers).length;
 
 
-  if (answeredQuestions < totalQuestions) {
-
+  if (!isTimeout && answeredQuestions < totalQuestions) {
     const confirmSubmit = window.confirm(
       "You have answered " +
       answeredQuestions +
@@ -323,10 +292,10 @@ function handleSubmitQuiz() {
       totalQuestions +
       " questions. Are you sure you want to submit?"
     );
-
     if (!confirmSubmit) {
       return;
     }
+  
   }
 
 
@@ -335,16 +304,15 @@ function handleSubmitQuiz() {
 
   QUIZ_QUESTIONS.forEach(function (question, index) {
 
-    if (userAnswers[index] === question.correctAnswer) {
-      correctCount++;
+      if (userAnswers[index] === question.correctAnswer) {
+        correctCount++;
     }
-
   });
-
 
   const currentUserId =
     sessionStorage.getItem("currentUserId") || "Unknown";
-
+  const currentUserName =
+    sessionStorage.getItem("currentUserName") || "Participant";
 
   const resultData = {
     userId: currentUserId,
@@ -359,7 +327,6 @@ function handleSubmitQuiz() {
     JSON.stringify(resultData)
   );
 
-
   window.location.href = "result.html";
 }
 
@@ -371,7 +338,6 @@ function initResultPage() {
     window.location.href = "index.html";
     return;
   }
-
 
   try {
 
@@ -419,8 +385,36 @@ function initResultPage() {
 function handleRestartQuiz() {
 
   sessionStorage.removeItem("currentUserId");
+  sessionStorage.removeItem("currentUserName");
   sessionStorage.removeItem("quizAnswers");
   sessionStorage.removeItem("quizResult");
+  sessionStorage.removeItem("storedQuizQuestions");
 
   window.location.href = "index.html";
+}
+
+function quizTimer() {
+  let min = parseInt(sessionStorage.getItem("min"));
+  let sec = parseInt(sessionStorage.getItem("sec"));
+  function timer() {
+    minutes = min < 10 ? "0" + min : min;
+    seconds = sec < 10 ? "0" + sec : sec;
+    timerBadge = document.getElementById("timerBadge")
+    timerBadge.textContent = "Time: " + minutes + ":" + seconds;
+    sec = sec - 1;
+
+    if (min === 0 && sec === 0) {
+      alert("Time is up! Submitting quiz...");
+      isTimeout = true;
+      handleSubmitQuiz(true);
+      return;
+    }
+    if (sec <= 0) {
+      min = min - 1;
+      sec = 59;
+    }
+    sessionStorage.setItem("min", min);
+    sessionStorage.setItem("sec", sec);
+  }
+  setInterval(timer, 1000)
 }
