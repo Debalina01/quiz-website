@@ -85,37 +85,39 @@
       <form id="userIdForm" onsubmit="handleStartQuiz(event)">
 
         <div class="form-group">
-          <label for="userIdInput">User ID <span class="required-star">*</span></label>
-          <input
-            type="text"
-            id="userIdInput"
-            placeholder="Enter User ID (e.g., VBYLD001)"
-            autocomplete="off"
-            required
-          >
-          <span class="field-hint">Sample IDs for testing: VBYLD001, VBYLD002, VBYLD003</span>
-        </div>
 
-        <div class="form-group">
-          <label for="userNameInput">Your Name <span class="optional-tag">(Optional)</span></label>
+          <label for="userNameInput">User Name</label>
+
           <input
             type="text"
             id="userNameInput"
-            placeholder="Enter your name"
+            placeholder="Enter User Name (e.g., Srashti Agarwal)"
             autocomplete="off"
+            required
           >
+          <label for="userIdInput">User Phone No.</label>
+
+          <input
+            type="text"
+            id="userIdInput"
+            pattern="[0-9]{10}" 
+            maxlength="10"
+            placeholder="Enter User ID (e.g., 6377853173)"
+            autocomplete="off"
+            required
+          >
+
         </div>
+
 
         <div id="errorMessage"
           class="error-message"
           style="display: none;">
         </div>
 
-        <button type="submit" class="btn btn-primary btn-start">
-          <span>Start Quiz</span>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="9 18 15 12 9 6"></polyline>
-          </svg>
+
+        <button type="submit" class="btn btn-primary">
+          Start Quiz
         </button>
 
       </form>
